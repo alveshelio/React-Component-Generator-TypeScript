@@ -12,6 +12,10 @@ program
 program
   .command('classComponent <componentName>')
   .alias('c')
+  .option('-d, --destination', 'Override the destination for the component')
+  .option('-s, --style-extension', 'What kind of style syntax (css, module.css scss, sass, less, styl). If no flag' +
+    ' css' +
+    ' extension will be the default')
   .description('Generate a class component')
   .action((componentName) => {
     generateReactClassComponent(componentName)
@@ -20,6 +24,10 @@ program
 program
   .command('statelessComponent <componentName>')
   .alias('s')
+  .option('-d, --destination', 'Override the destination for the component')
+  .option('-s, --style-extension', 'What kind of style syntax (css, module.css scss, sass, less, styl). If no flag' +
+    ' css' +
+    ' extension will be the default')
   .description('Generate a stateless component')
   .action((componentName) => {
     generateReactStatelessComponent(componentName)
@@ -28,6 +36,10 @@ program
 program
   .command('containerComponent <componentName>')
   .alias('r')
+  .option('-d, --destination', 'Override the destination for the component')
+  .option('-s, --style-extension', 'What kind of style syntax (css, module.css scss, sass, less, styl). If no flag' +
+    ' css' +
+    ' extension will be the default')
   .description('Generate a redux container component')
   .action((componentName) => {
     generateReactContainerComponent(componentName)

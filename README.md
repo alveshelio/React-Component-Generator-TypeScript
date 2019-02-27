@@ -1,23 +1,23 @@
-# React Typescript Component Generator
+# React Component Generator TypeScript
 
-React Typescript Component Generator is a cli for generating react component for typescript based architucture.
+React Component Generator TypeScript is a cli for generating react component for typescript based architecture.
 
 ## Install
 * Global installation
   ```bash
   # Using yarn package manager
-  $ yarn global add react-typescript-component-generator
+  $ yarn global add react-component-generator-typescript
 
   # Using npm package manager
-  $ npm install --global react-typescript-component-generator
+  $ npm i -g react-component-generator-typescript
   ```
 * Local installation
   ```bash
   # Using yarn package manager
-  $ yarn add --dev react-typescript-component-generator
+  $ yarn add -D react-component-generator-typescript
 
   # Using npm package manager
-  $ npm install --save-dev react-typescript-component-generator
+  $ npm i -D react-component-generator-typescript
   ```
 
 ## Usage
@@ -34,26 +34,26 @@ eg:
 ### Generate React Stateless Component
 
 ```bash
-$ grc statelessComponent <componentName>
+$ tsg statelessComponent componentName
 # or
-$ grc s <componentName>
+$ tsg s componentName
 ```
 
 ### Generate React Class Component
 
 ```bash
-$ grc classComponent <componentName>
+$ tsg classComponent componentName
 # or
-$ grc c <componentName>
+$ tsg c componentName
 ```
 
   ### Generate React Redux Container Component
 
 ```bash
-$ grc containerComponent <componentName>
+$ tsg containerComponent componentName
 # or
-$ grc r <componentName>
+$ tsg r componentName
 ```
 ## License
 
-React Typescript Component Generator is MIT licensed.
+React Component Generator TypeScript is MIT licensed.
